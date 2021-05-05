@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+  }
+  /*App.jsx*/
+  
+  .App {
+    display: grid;
+    place-items: center;
+    background-color: #dadbd3;
+    height: 100vh;
+  }
+  .app_body {
+    display: flex;
+    background-color: #ededed;
+  
+    height: 100vh;
+    width: 100vw;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 1);
+  }
+  
+  /*sidebar.jsx*/
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    background-image: url(https://images.pexels.com/photos/311039/pexels-photo-311039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  }
+  .sidebar_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-right: 1px solid lightgray;
+    font-size: 56px !important;
+    background-image: url(https://images.pexels.com/photos/311039/pexels-photo-311039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  }
+  .sidebar_header_right {
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content: space-between;
+   
+  }
+  .sidebar_header_right > .MuiSvgIcon-root {
+    margin-right: 1vw;
+    font-size: 40px !important;
+    color: green;
+  }
+  .sidebar_search {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    height: 39px;
+    padding: 10px;
+    background-image: url(https://images.pexels.com/photos/311039/pexels-photo-311039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  }
+  .sidebar_search_container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+  }
+  .sidebar_search_container > input {
+    border: none;
+    margin-left: 10px;
+    width: 90%;
+    height: 90%;
+    border-radius: 30px;
+  }
+  .sidebar_search_container > input:focus {
+    outline: none !important;
+    border-color: #719ece;
+    box-shadow: 0 0 10px #719ece;
+  }
+  .sidebar_search_container > .MuiSvgIcon-root {
+    color: gray;
+    padding: 10px;
+  }
+  /* sidebar chat.jsx */
+  .sidebar_chat {
+    flex: 1;
+    background-color: white;
+    overflow: auto;
+    background-image: url(https://images.pexels.com/photos/311039/pexels-photo-311039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  }
+  a {
+    text-decoration: none !important;
+    color: black;
+  }
+  .sidebarChat {
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #f6f6f6;
+    background-image: url();
+  }
+  .sidebarChat:hover {
+    background-color: rgba(0, 0, 1, 0.3);
+  }
+  .sidebar_chatinfo {
+    margin-left: 15px;
+    align-items: center;
+  }
+  .sidebar_chatinfo > h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  /* Chat.jsx */
+  .Chat {
+    flex: 0.7;
+    /* background-image: url("https://image.freepik.com/free-photo/blue-swimming-pool-rippled-water-detail_1258-710.jpg"); */
+    display: flex;
+    flex-direction: column;
+  }
+  .chat_header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+  }
+  .chat_headerInfo {
+    flex: 1;
+    padding-left: 20px;
+  }
+  .chat_headerInfo > h3 {
+    margin-bottom: 3px;
+    font-weight: 500;
+    color: darkorchid;
+  }
+  .chat_headerInfo > p {
+    color: gray;
+  }
+  .chat_headerRight {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100px;
+  }
+  .chat_body {
+    flex: 1;
+    background-image: url("https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow: auto;
+  }
+  .chat_message {
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 30px;
+  }
+  .chat_name {
+    position: absolute;
+    top: -15px;
+    color: white;
+    font-weight: 800;
+    font-size: xx-small;
+  }
+  .chat_timestamp {
+    margin-left: 10px;
+    font-size: xx-small;
+  }
+  .chat_receiver {
+    position: relative;
+    font-size: 16px;
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: #dcf8c6;
+    width: fit-content;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  .chat_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border: 1px solid lightgray;
+    /* background-image: url("https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+  }
+  .chat_footer > form {
+    flex: 1;
+    display: flex;
+  }
+  .chat_footer > form > input {
+    flex: 1;
+    border-radius: 30px;
+    outline: none !important;
+    padding: 10px;
+    border: none;
+  }
+  .chat_footer > form > :focus {
+    outline: none !important;
+    border-color: #719ece;
+    box-shadow: 0 0 10px #719ece;
+  }
+  .chat_footer > form > button {
+    
+    border: none;
+  }
+  /* Login.jsx */
+  .login {
+    display: flex;
+    background-image: url("https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+  }
+  .login_container {
+    /* position: relative; */
+  
+    padding: 100px;
+    text-align: center;
+    background-color: rgba(252, 70, 107, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    font-family: "Lobster", cursive;
+  }
+  .login_container > img {
+    object-fit: contain;
+    height: 100px;
+    margin-bottom: 40px;
+  }
+  .login_button {
+    margin-top: 50px;
+    text-transform: inherit !important;
+    background-color: greenyellow !important;
+  
+    transition: all 0.5s;
+    cursor: pointer;
+    color: black;
+    font-size: 28px;
+    font-family: "Lobster", cursive;
+    border-radius: 30px;
+  }
+  .login_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .login_button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .login_button:hover span {
+    padding-right: 25px;
+  }
+  
+  .login_button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  /* Welcome_Screen.jsx */
+  .wrapper{
+    flex: 0.7;
+    background-image: url("https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    display: flex;
+    text-align: center;
+     flex-direction: column;
+    place-items: center;
+  }
+    .wrapper>h1 {
+      color: #fff;
+      font-size: 70px;
+      font-family: "ubuntu";
+      text-transform: uppercase;
+      font-weight: 2000;
+      font-family: 'Caveat', cursive;
+      background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #57d75b 60%);
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 1.5s linear infinite;
+      display: inline-block;
+      padding: 20px;
+    }
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+  
+    .wrapper > .MuiSvgIcon-root {
+      color: orangered;
+      padding: 10px;
+      font-size: 250px !important;
+    }
