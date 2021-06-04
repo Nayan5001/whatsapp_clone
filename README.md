@@ -1,3 +1,5 @@
+Whatsapp Clone
+Basically this website provides almost same feature as whatsapp web.You can create seperate chat rooms to chat with your friends and enjoy emojis and voice controlled typing.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
